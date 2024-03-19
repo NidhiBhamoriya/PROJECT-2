@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#main
+{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    position: fixed; 
+    width:100%;               /* yha width lgana position fixed ke sath nhi to chije ider uder ho jaye gi   , vese bhi hm div ko height width dete hi h*/
+    align-items: center;                      /*yh nhi likhe g to bhi chale ga*/
+    justify-content: flex-end;
+    padding: 30px 40px  0px 0px;
+}
+#nav h3{
+    background-color: black;
+    color: #fff;
+    padding:10px 15px;
+    margin-left: 5px;                         /* <-- dono m gap dene liye we use margine left*/
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+#intro{
+    width: 100%;
+    height: 50%;
+    /* background-color: bisque; */
+    padding: 50px 60px;
+}
+
+#intro h1{
+    font-size: 110px;
+    line-height: 110px;            /* do sbdo ke bich ki distance*/
+    letter-spacing: -2px;
+}
+
+#address{
+    margin-top:22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#address h3, #address h4{
+    font-size: 23px;
+    font-weight: 550;
+}
+
+#hero-image{
+    width: 100%;
+    height: 88%;
+    background-image: url(./img.webp);
+    background-size: cover;
+    background-position:center;
+}
+
+#about{
+    height:60%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+
+#about h2{
+    width: 66%;
+    font-size: 68px;
+    line-height: 68px;
+    letter-spacing: -2px;
+}
+
+#about-part2 {
+    width: 30%;
+    height: 100%;
+    border-left: 2px solid black;
+    /* align-items: flex-start; */
+    padding: 0px 60px;
+    display: flex;     /* about-part2 ke elements ko display ak hi row m  ,aur element ko divide kre ga rows and columns m, 
+    aur yh row ke form m divide kre dega*/
+
+    /* lekin hm columns ke form m bhi divide kr skte h   and flex ki property ko use kr skte h joki h align-item: and justify-content:*/
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-part2 h3{
+    font-size: 25px;
+    font-weight: 550;
+}
+
+#icons i{
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 17px;
+    margin-right: 6px;
+}
+
+#work{
+    display: flex;
+    border-top: 2px solid black;
+    height: 53%;
+    width: 100%;
+    padding: 42px 42px;
+}
+
+#work1{
+    display: flex;
+    width: 35%;
+    height: 100%;
+    padding-right: 42px;
+    border-right: 2px solid black;
+    justify-content: space-between;
+}
+
+#work h3{
+    font-size: 24px;
+    font-weight:550;
+}
+
+#work1 i{
+    font-size: 28px;
+}
+
+#work2{
+    width: 65%;
+    height: 100%;
+    padding:0px 42px;
+}
+
+.work2-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 42px 0px; */
+}
+
+.work2-part:nth-child(1)               /* is work2-part name ki class ka nthcild(1)->i.e 1 means first child if we write 2 means second child*/
+{
+    border-bottom: 2px solid black;
+    padding-bottom:42px ;
+}
+
+.work2-part:nth-child(2)               /* is work2-part name ki class ka nthcild(1)->i.e 1 means first child if we write 2 means second child*/
+{
+    padding-top:42px ;
+}
+
+.work2-part .elem{
+    width: 50%;
+    height: 100%;
+}
+
+.work2-part .elem:nth-child(1){                               /* dono hi work2-part ke (1)child elem ko border mil jaye gi*/     /* remember space nhi dena h .elem:nth-child(1)*/
+    border-right: 2px solid black;
+    padding-right: 42px;
+ }
+ .work2-part .elem:nth-child(2)
+{
+    padding-left: 42px;
+}
+
+          /* or we can directly use the above line of code*/
+
+/* .elem:nth-child(1)
+{
+    border-right: 2px solid black;background-color: red;
+}
+.elem:nth-child(2)
+{
+    background-color:burlywood;
+} */
+
+
+
+.work2-part .elem h4{
+    font-size: 32px;
+    margin-bottom: 8px;
+    font-weight: 549.90;             /* thoda sa hi bold krna h pr nhi ho rha h */
+}
+
+.work2-part .elem p{
+    font-size: 14px;
+    /* font-weight: 550; */                /*h4 ki heading se thoda sa hi km fnot wight only and we give color thoda sa gray*/
+    color: rgb(56, 54, 54);
+}
